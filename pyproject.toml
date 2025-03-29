@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decision_maker"
+version = "0.0.1"
+authors = [
+  { name="Patrick McQuay", email="patrick.mcquay@gmail.com" },
+]
+description = "Python library that implements a number of decision making algorithms"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/SnarkAttack/decision-maker"
+Issues = "https://github.com/SnarkAttack/decision-maker/issues"
