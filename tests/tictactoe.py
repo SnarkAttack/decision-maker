@@ -48,3 +48,9 @@ class TicTacToeAction(BaseAction):
 
     def __repr__(self):
         return self.__str__()
+    
+    def __eq__(self, other):
+        return self.__class__ == other.__class__ and self.x == other.x and self.y == other.y and self.player == other.player
+
+    def __hash__(self):
+        return hash((self.x, self.y, self.player))
