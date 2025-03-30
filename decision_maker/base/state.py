@@ -13,13 +13,6 @@ class BaseState(ABC):
         Returns id for player whose turn it is
         """
         raise NotImplementedError()
-    
-    @abstractmethod
-    def get_actions(self) -> Iterable[BaseAction]:
-        """
-        Return a list of all actions (possible or not) for this state
-        """
-        raise NotImplementedError()
 
     @abstractmethod
     def get_valid_actions(self) -> Iterable[BaseAction]:
